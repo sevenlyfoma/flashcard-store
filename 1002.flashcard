@@ -1,0 +1,148 @@
+What is OOP?
+Object oriented programming, a programming paradigm based on objects
+
+What is an object?
+A software entity that encapsulates data and functions
+
+What is a method?
+A function that belongs to an object
+
+What is an attribute?
+A variable that belongs to an object
+
+What is a class?
+A blueprint for creating objects, defines the intial values of its attributes and implementations of its methods
+
+What is a variable?
+A symbolic name somehow associated with a value or memory location
+
+What is variable declaration?
+The process of allocating a name and some location for a variable
+
+What is variable initilisation?
+The bestowing of an initial value to be stored in that variable
+
+What is a type?
+A description of the kind of thing a variable is, and thus how it can be used
+
+What are the 2 kinds of type in java?
+Primitive and Reference
+
+What is a primitive type?
+Basic data types that represent single immutable values
+
+What is a reference type?
+Complex data types in which the data stored by the variable is a reference to the memory location of the actual data, which is more than can be stored within a single variables memory space
+
+What does null signifiy in java?
+That a reference types reference does not point to any object in memory
+
+What is the scope of a variable?
+The section of the code in which the variable can ba validly accessed
+
+What are the two main scopes?
+Global and Local
+
+What is an expression?
+A section of code that can be evaluated to have a type and a value
+
+What is an operator?
+Something that combines expressions to create a new expression
+
+What is type coercion?
+The conversion of a sub expression within an expression to a type of another sub expression to create a legitamte expression
+
+What is a programs flow of control?
+The order in which a programs methods are called
+
+What is abstraction?
+The process of extracting the general structure of something to allow the inessential details to be ignored
+
+What is parameterisation?
+The process of writing generic code to which specific paramaters may be supplied to solve a specific insitance of the problem
+
+What is a function?
+A grouped collection of instructions with potentially changable paramaters, which can be called repeatedly without code reuse
+
+In java what is the static keyword?
+A keyword that signfies that something can be accessed from this class without a object instance of this class. For a static field, there is one single memory 'slot' per class per field
+
+What is passing by value?
+The copying of the value of a variable into the parameters of a function. The changing of the values of the parameters does not change the value of the original variable.
+
+What is passing by reference?
+The copying of the reference to the object a variable represents into the paramaters of a function. Changing the attributes of that object are reflected in the original variable.
+
+What does the 'this' keyword do in java?
+It allows an object to reference itself, invoking its own methods and attributes explicitly, removing ambiguity. Also allows an object to pass itself to a methods parameters
+
+What is encapsulation in OOP?
+The process of 'hiding' an objects attributes from other objects, making it so they can only be accessed and changed indirectly via the objects methods
+
+What is the benefit of encapsulation?
+Allows adding of checks to limitations to the changing of an attributes value to make sure its valid
+
+What is the private modifier in java?
+Siginifies that a field or method can only be accessed within the class it is within
+
+What is the protected modifier in java?
+Means that member can only be acceded from the defining class, another class in the same package, or in a subclass
+
+What is the final modifier in java?
+Declares something to be constant, it cannot change beyond initilisation
+
+What is a constructor?
+A special method that is executed when an object is created
+
+What is method overloading?
+When two or more functions share the same name but take different paramaters and thus behave differently
+
+What is a model?
+An abstract representation of a scenario entity or concept
+
+What is OO modelling?
+Modelling a scenario in terms of objects and their relations to one another. Everything is represented as an object or a relation between them.
+
+What are the UML class sections?
+Class name, attributes, operations
+
+How is association specified in UML?
+Via an arrow, an arrowhead pointing to a class means it is "owened" by the outbound class. Can go both ways, number of associations is specified
+
+What is a UML object diagram?
+UML diagram that displays objects, and thus definite values of attributes, at some moment in time.
+
+What is class inheritance?
+The process of defining a class as a subclass of another class, such that the subclass inherits the attributes and methods of the superclass without having to redefine them
+
+How is inheritance specifiecd in UML?
+An unfilled arrow, Arrow points to superclass
+
+What does the keyword super do in Java?
+Calls the superclasses overriden functions within a subclass, such as the initiliser
+
+What is substituability in inheritance?
+The ability to replace any instance of a superclass with one of its subclasses, since all of the superclasses methods are guaranteed to be present
+
+What is overriding in inheritance?
+The redefining of a method first defined in a superclass within the subclass. Final methods cannot be overriden
+
+What is late binding?
+The usage of a method of an object that may or may not be of a subclass and therefore may or may not be overriden, decided at runtime
+
+What is an abstract class?
+A class that cannot have objects of it instantiated. Concrete classes then inherit its abstract methods
+
+What is a java interface?
+A set of method headers and static methods, that can be inherited to a class without being a superclass, thus allowing a class to inherit from multiple interfaces
+
+
+
+
+
+
+
+
+
+
+
