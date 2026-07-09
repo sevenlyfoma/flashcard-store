@@ -1,0 +1,127 @@
+What is transient data?
+Temporary data that is only used during the execution of a program.
+
+What is persistent data?
+Data that is stored such that it can be accessed across multiple programs.
+
+What is a bit?
+A binary digit, data that can be in 2 states. The basic unit of all modern information storage and processing.
+
+What is a byte?
+A grouping of 8 bits.
+
+What is a word in data storage?
+The number of bits that are manipulated as a group on a particular computer architecture.
+
+How does sign and magnitude work for storing negative numbers?
+The most sigificant bit represents sign, with 1 being negative
+
+How does twos complement work for representing negative numbers?
+The first digit represents the negative of its usual value, so in an 8 bit number, the MSB represents -128
+
+Why do we not use sign and magnitude?
+The circuitry for arithmatic is more complicated than twos complement
+
+How are floating point numbers stored?
+The sign bit, the mantissa (the value between 0 and 1 that follows the floating point), and the exponent
+
+In what scenario should floats not be used?
+When the accuracy of the number is paramount, ie in a numerical ID system
+
+What is a data model?
+A set of rules defining how some data is meant to be interpreted, used, and kept consistent
+
+What is a record?
+A collection of related data values spread across different component fields
+
+What is CSV?
+Comma seperated values, a text file with a record on each line, with fields seperated by commas. An optional header record for defining fields
+
+What is a database?
+A program that manages structured data, proving APIs for users programs to work with the data.
+
+What is unstructured data?
+Data with little or no recurring record structure. E.g free text
+
+What is semi-structured data?
+Data with recognisable standard elemetns in it, but not a simply repreating series of record, e.g free text with markup
+
+What is an exception in java?
+An event, which occurs during the execution of a program, that disrupts the normal flow of the programs instructions.
+
+What is the purpose of an exception handler?
+To seperate error handling from the main complicated
+
+When should you declare and catch exceptions?
+Declare if method is providing service in which the caller should decide how to deal with exceptions, catch if method is the one dealing with the exceptions
+
+What is an uncheck exception?
+One which is not necessarily caught, such as errors which are not intended to be caught, e.g stackoverflow  
+
+What is JSON
+Javascript Object Notation, a human readable data interchange format that is easily machine parsed and gnerated
+
+How is JSON data structured?
+A Json object is enclosed by curly braces {}, within it key value pairs are sepeated by commas, with the kv seperated by colons. Values in a kv pair can themselves be JSON objects
+
+What is XML?
+Extensible Markup Language, a text format that uses html like tags to structure data.
+
+What is the Document Object Model?
+The standard object oriented interface to the tree structure of some formats of data such as XML
+
+What is the streaming interface type for semi structured data?
+Provides input and output streams that recognise the basic syntax. provide methods to get the next tag or text or key value pair.
+
+What is the upside of a streaming interface?
+Allows you to process very large objects without holding them in memory.
+
+What is a Document?
+A record containing unstructured free natural language text?
+
+What is a corpus?
+A collection of documents
+
+What is Information Retrieval (IR)?
+Finding documents that are about a given topic
+
+What is precision in IR?
+The probability that a retrieved document is relevant (no relevant documents retrieved / no total documents retreived)
+
+What is recall in IR?
+The probability that a document is retrieved given it is releveant (no of relevant documents retrieved/ total number of relevant documents)
+
+What is the F1 Measure?
+A score that is found by combining both precision and recall via their harmonic mean (2 / recall^-1 + precesion^-1)
+
+What are the disadvantages of storing data as files?
+Data is stored in multiple file formats, and may be duplicated across different files, data is difficult to access, hard to enforce data integrity, no atomicity in updates, problems with conccurent access
+
+How are relational databases structured.
+Tables of data, composed of records, where tables have relationships between each other.
+
+What is a primary key?
+A set of attributes (often one) that are unique to a single row of a table, uniquely identifying it.
+
+What is a foreign key?
+A set of attributes that correspond to the primary key of another table
+
+What is a database schema?
+A set of rules that define the structure of a database, including the names of tables, their attributes, and integrity constraints
+
+What is SQL?
+Structured Query Language a language used both to define database schema and to read or change data in a relational database
+
+What is the E-R model?
+Entity Relatioship model, a graphic model used to design databases, mapping out key concepts as entities and how they interact with one another (relationships)
+
+What is an attribute in the E-R model?
+A value associated with an Entity, become the fields of our table
+
+How are many to mant relationships represented in the ER model?
+As two one to many relationships mapping to an intermediate entity 
+
+
+
+
+
