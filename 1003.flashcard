@@ -121,7 +121,33 @@ A value associated with an Entity, become the fields of our table
 How are many to mant relationships represented in the ER model?
 As two one to many relationships mapping to an intermediate entity 
 
+What does ACID stand for?
+Atomic, Consistent, Isolated, Durable
 
+What does it mean for a transaction to be atomic?
+All or nothing, if any step in a transaction fails, the entire operation is rolled back?
 
+What does it mean for a transaction to be consistent?
+A transaction must only transition the datavbase from one valid state to another
+
+What does it mean for a transaction to be isolated?
+Concurrent transactions do not interfere with each other, simulataneous operations are executed as if in sequence
+
+What does it mean for a transaction to be durable?
+Once a transaction is successfully committed, its changes are permanantly saved, even in the event of a system outage vis crash or otherwise
+
+What is database sharding?
+A horizontal scaling method that splits a single large dataset into smaller chunks called shards, each shard is stored on a seperate database server
+
+What is noSQL?
+A broad identifier for many different non relational database techniques, which relaxes the constraints upon the data, generally adhering to BASE principles
+
+What does BASE stand for?
+Basically Available for requests, soft state, eventual consistency 
+
+What is the CAP theorm?
+Cannot have all three of Consistency, Availability and Parition tolerence 
+
+next week 6 - 1
 
 
