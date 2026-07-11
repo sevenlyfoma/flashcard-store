@@ -148,6 +148,32 @@ Basically Available for requests, soft state, eventual consistency
 What is the CAP theorm?
 Cannot have all three of Consistency, Availability and Parition tolerence 
 
-next week 6 - 1
+What s JDBC
+Java DataBase Connectivity: a standard java api that enables connecting and communicating with relatonal databases
+
+In the context of JDBC what are drivers?
+Jar files that allow for the communication with specific database technologies
+
+What is the basic flow of using jdbc.
+A connection object is created that accesses the databased. The connection object is used to create statement objects, which are executed to create resultset objects
+
+What is a JDBC prepared statment?
+A statement which can take in paramaters at run time to do different things, without being open to SQL injection
+
+What is ORM?
+Object Relational Mapping: a technique where classes at the code level are associated with tables at the DB level, and subsequently objects associated with rows.
+
+What is JPA?
+Java Persistence API, provides a mechanism for managing persisten and ORM
+
+What is JPQL?
+Java Persistence Query Langauge, used to define searches against persistent entities independent of the mechanism used to store those entities.
+
+What are the difficulties with ORM?
+Pointers and keys do not map well onto each other, the type systems are different, no sub typing in relational systems
+
+
+
+next week 8
 
 
