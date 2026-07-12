@@ -172,8 +172,24 @@ Java Persistence Query Langauge, used to define searches against persistent enti
 What are the difficulties with ORM?
 Pointers and keys do not map well onto each other, the type systems are different, no sub typing in relational systems
 
+What is a data stream?
+A sequence of data elements made available over time.
 
+What are some features of data streams that set them apart from batch data?
+All data not necessarily stored, can be infinite, may be generated on demand
 
-next week 8
+How is stream programming structured?
+Stream computation is formed by a pipeline of stream operations, typically starts with a generatior, followed by intermediate operations, followed by a terminal operations. Intermediate operations take in a stream and output a stream. All done lazily
+
+List some intermediate stream operations?
+Filter, map, flatMap, 
+
+List some terminal stream operations?
+Reduce, forEach, findAny
+
+In what way are streams amenable to parallelism?
+Many intermediate operations on a stream of data are indepenet from one element to another
+
+next week 9
 
 
