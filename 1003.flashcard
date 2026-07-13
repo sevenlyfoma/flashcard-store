@@ -190,6 +190,32 @@ Reduce, forEach, findAny
 In what way are streams amenable to parallelism?
 Many intermediate operations on a stream of data are indepenet from one element to another
 
-next week 9
+What is MapReduce?
+A programming model and processing engine used to analuze massive datasets across distributed servers in paralell?
+
+How does MapReduce work in basic?
+Breaks large tasks into two primary phases, a map stage that filters and transforms data into k-v pairs and a reduce step that aggregates these reuslts into a final summary
+
+What is distributed data?
+Data stored in multiple locations
+
+What consequences might we have to think about when distributing data?
+Different stores can fail when others dont, data transfer cost may become relevant, remote data may be accessed differently from local data
+
+What is vertical scaling?
+Buying a bigger machine, a more powerful processor, or more storage capacity
+
+What is horizontal scaling?
+Buyinh more of the same machines
+
+What problems might arise from horizontal scaling?
+Communication overheads, increased software complexity, partial failure, potential inconsistency
+
+What is lazy processing?
+Things are only computated when the data is demanded.
+
+
+
+next week 10
 
 
