@@ -214,6 +214,12 @@ Communication overheads, increased software complexity, partial failure, potenti
 What is lazy processing?
 Things are only computated when the data is demanded.
 
+What is the problem with blocking APIs for database access?
+If we have many different programs accessing the same database the amount of time waiting for a request grows quickly
+
+What is data mining?
+The process of finding useful knowledge from exrtremely vast quantities of data that cannot be searched by hand
+
 
 
 next week 10
