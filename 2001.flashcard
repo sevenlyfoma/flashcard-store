@@ -10,4 +10,94 @@ A mathematicatical model that defines a data structure by the operations is supp
 What is an array?
 A sequence of indexed elements with a fixed length.
 
-Next is JL02
+What is the basic process of Test Driven Development?
+Identify a small feature to be implemented, write a unit test for it which will fail, write the smallest bit of code that will pass the test without breaking the previous tests
+
+What are the 3 categories for unit tests for a single function?
+Valid cases (typical passing values), Edge cases(maximum, minimun, empty cases) and Erroneous Cases(invalid data for the function)
+
+Explain the abstract factory pattern.
+Some client code calls on an abstract 'factory' to create an abstract 'product'. Concrete factories implement the methods of the abstract factory and produce concrete products that implement the abstract produucts. An example is the JDBC wherein an abstract connection is created based on the driver specified, with the concrete implementation invisible to the user
+
+How does binary search work on a sorted array?
+Check the middle element, if search target is equal then return, if greater, check upper half, else lower half
+
+What is a linked list?
+An abstract data type where each element holds a pointer to the next element in the collection
+
+What benefits do linked lists have over arrays?
+No restriction on number of elements, flexible size
+
+What downsides do linked lists have compared to arrays?
+Access time is linear rather than constant, cannot use binary search even if sorted
+
+What is a stack?
+An abstract data type with a last in first out policy
+
+List some example applications of a stack?
+Reversing list, evaluating reverse polish experssions, executing programs
+
+What is a queue?
+An abstract data type with a first in first out policy
+
+What is recursion?
+A programming pattern in which the result of the current step is defined in terms of the results of the previous steps
+
+How do we avoid infinite regression in recursive programming?
+By adding a base case to ground the recursion
+
+What is tail recursion?
+A recursive pattern where there is no data "left behind" after the recursive call and so no reason to call back to the previous recursive calls, allowing for recursive code to be optimised in the compiler into iterative code with no call stack
+
+What is a doubly linked list?
+A linked list in which each node holds a pointer to the previous and the next node
+
+What is a tree?
+A directed, connnected graph with no cycles. Each node can have 0 or more successors and one predecessor, except the root node which has no predecessors, each node is pointed agt by at most one other
+
+What is a binary tree?
+A tree in which every node has at most 2 child nodes
+
+What is depth first preorder traversal of a tree?
+First visit the node, then visit its children
+
+What is depth first post order traversal of a tree?
+First viist the children of the node, then vist the node itself
+
+WHat is depth first inorder traversal of a binary tree?
+Visit the first child, then visit the node, then visit the second child
+
+What is breadth first travesal of a tree?
+Visiting the nodes of the tree top to bottom, left to right
+
+What is an iterator?
+A pattern that allows the traversal of a collection of data using a standard interface without having to know details of internal data structure representation
+
+What is a monomorphic language?
+One in which every value and variable can be interpreted to be of one and only one type
+
+What is polymorphism?
+A property that allows some values and variables to have morwe than one type?
+
+What are the types of polymorphism?
+Ad hoc (overloading and coercion), Universal (inclusion and parametric)
+
+What is overloading?
+When operators and methods can be applied to operands and parameters of different types
+
+What is coercion?
+When an instance of one type is force to be interpreted as another
+
+What is inclusion (subtype) polymorphism?
+When an instance of a subtype can be manipulated as if it were an instance of the supertype
+
+What is parametric polymorphism?
+The allowence of a single piece of code to be given a generic type, using variables in place of actual types, and then instantiated with particular types when needed
+
+How is parametric polymorphism done in java?
+With java generics
+
+
+
+
+Next is RH01
