@@ -97,7 +97,104 @@ The allowence of a single piece of code to be given a generic type, using variab
 How is parametric polymorphism done in java?
 With java generics
 
+What is a state machine?
+A mathematical model of computation, in which the machine is in exactly one state at any one time 
 
+What is state?
+Whatever data a machine needs, derived from earlier input signals, to determine the effects of subsequent input signals
 
+What is finite control?
+A problem that can be solved using a machine with a finite number of states
 
-Next is RH01
+What is a finite state machine?
+A state machine with a finite number of states
+
+What are the components of the 6 tuple that formally define an FSM?
+The states, the initial state, the input alphabet, the output alphabet, the next state function and the output function
+
+What is an FSA?
+Finite State Automata, an FSM without output
+
+What are the components of the 5 tuple that formally define an FSA?
+The States, the initial states, The accepting STates, The input alphabet, and the next state function.
+
+When running an FSA with a given input what are we interested in?
+Whether the FSA finishes reading the input while in an accepting state
+
+Why can't you process mathematical formulas like (1 + 2) * (4 * (3 * 2)) with an FSA?
+Because the number of brackets is potentially unbounded, so need an unbounded number of states
+
+What is a nFSA?
+A Non deterministic FSA, in which we allow multiple different possible transitions per letter, and the nFSA always makes the right choice when given one, impossible for a real machine, however there is always an FSA that does the exact same thing as any nFSA
+
+How do you convert an nFSA to an FSA?
+The new states in the FSA are the sets of states reachable by a given input in the nFSA
+
+What is a grammar?
+A set of formal rules that deine what a valid sentence looks like for a given language
+
+What is the 4 tuple describing a context free grammar?
+The set of non terminals, the set of terminals, the set of productions mapping a non terminal to a sequence of non terminals and terminals, and the initial non terminal
+
+What is a parse tree?
+A tree structure of the derivation process of an input string by a ghammer, showing each grammar symbol used in the derivation
+
+What are the stages of turning source text into a parse tree?
+The source text is tokenised in a tokeniser during the lexical analysis stage. The resulting streeam of tokens is then turned into a parse tree by the parser in the syntax analysis stage
+
+How does a recursive descent parser work?
+Treat each production rule as a small recognised that looks at the token stream and tries to recognise itself, when it does, recursively calls other recognisers, any time we fail we rewind and try the next alternative production
+
+What are the main benefits and downsides to a recursive descent parser?
+Its simple and general and works for any grammer, but uses a lot of back tracking, storage and recursive calls, so it can be slow
+
+How does table driven parsing work?
+The parser uses a stack to keep track of grammar symbols that the parser expects to see and a parsing table to decide based on the input token what actions the parser should take
+
+Define big O notation.
+Let f(n) be the time taken to solve a problem of size n. A problem has O(g(n)) if f(n) <= a * g(n) for some positve real value a, as n tends towards infinity
+
+How does insertion sort work?
+Traverse the array, at each new element, rearrage the previous elements such that the new element is in the correct position
+
+How does merge sort work?
+Divide the array in half, apply merge sort to the two sub arrays, merge the two sorted sub arrays
+
+What is the complexity of merge sort?
+O(n log n)
+
+How does quicksort work?
+Choose a pivot, split into 3 sub problems, those less than the pivot, equal and greater, use quicksort on the smaller and greater problems, and then combine in order
+
+What is a balanced binary tree?
+One in which the heights of its two sub trees differe by at most 1
+
+What is a hash table?
+A data structure that works by using a hash function to turn a key into a unique index in which the value for said key is stored
+
+How do we handle hash table collisions?
+Store the key with the value, if the keys do not match upon access, use some defined collision avoidance scheme to find the true location of the key
+
+What is a graph?
+A data structure composed of nodes connected by edges
+
+What is a path in a graph?
+A sequence of nodes and eges in a graph where each subsequent node is connected to the previous node by the specified edges
+
+What is the path length?
+The number of edges in the path
+
+What does it mean for a graph to be connected?
+There is a path between every pair of nodes
+
+What is a subgraph?
+A collection of nodes within a graph that are connected
+
+How do we breadth first traverse a graph?
+Visit all nodes at ascending distances from our chosen first node
+
+What is a spanning tree?
+The structure formed on the edges used for node discovering in breadth first traversal of a graph
+
+How does dijkstras algorithm work?
+Use a breadth first search, attaching distances as we go
