@@ -117,6 +117,37 @@ Domain Name System, a hierarchical and distributed name service that maps domain
 How does name resolution work in DNS?
 Client sends request to first resolver, which then sends requests to secondary resolvers until the root server is reached, at which point the address of the remote server is send back to the first resolver which then accesses the remote server and returns the IP to the client. This is short circuited at any point if the request is cached at any of these servers
 
-next is net05
+What are the components of the TCP header?
+Source port, destination port, sequence number, acknowledgement number, offset, flags, window, checksum, urgent pointer
 
+How does the TCP handshake work?
+Client sends a SYN (synchronize) message, when the server receives the syn it sends a syn ack (acknowledgement), when the client receives a syn ack, it considers the connection open and sends a syn ack, when the server receives a syn ack it considers the connection open
 
+How does the TCP teardown work?
+Client sends a FIN (finish) message, server responds with a FIN ACK, then sends all the remaining data, then sends a FIN message. When the client receives the FIN message it sends a FIN ACK message and then starts a timeout to close the connection. When the server recevies the fin ack it closes the connection
+
+How do sequence numbers work in TCP?
+Header includes a sequence number based on the total bytes of the data stream. When a sequence number is received a corresponding ack for that number is sent with the next message sent to the sender, which might ack multiple packets. If the sender does not receive an ack for a certain piece of data it must use a retransmission strategy.
+
+How is the checksum used in TCP?
+If the checksum does not match what is calculated with the received data the packet should be discarded and no ack sent
+
+What is the general outline of congestion in networks?
+As load increases, throughput increases as more data is being dealt with. As load continues to increase the increase in throughput slows down due to higher strain on the system, if load continues to increase the network will suffer congestion collapse where throughput rapidly decreases
+
+What are the causes of network congestion?
+Too many packets, buffer overflow in routers, unpredictable traffic patterns, route changes, time of day traffic
+
+How does TCP congestion control work?
+Phases: slow start, send 1 segment, if successful, double the amount sent etc. Upon any missing packet drop to half the amount of segments and enter congestion avoidence where you only send 1 additonal packet periodically every round trip time
+
+How does TCP flow control work?
+Receiver tells the Sender explicitly if it cannot handle the amount of segments being sent and caps it manually. Done with the window size field
+
+What is UDP?
+A connectionless, unconfirmed, unreliable datagram service that sits as a thin layer on top of IP
+
+What are the components of the UDP header?
+Source port, destination port, length, checksum
+
+next is net06
