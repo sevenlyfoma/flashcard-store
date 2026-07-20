@@ -1,3 +1,122 @@
 What is the Internet?
-A global interconnection of different data networks
+The global system of interconnected computer networks that use the Internet protocol suite to communicate between networks and devices.
+
+What is an end system?
+A device that sits at the edge of a computer network. The end user directly interacts with an end system.
+
+What is a LAN?
+Local area network, a nework that interconnects computers within a limited area such as a residence, campus or building
+WHt is a WAN?
+Wide area network, a network that extends over a large geographic area
+
+What is a modem?
+Modulator/Demodulator. Creates a signal compatible with the WAN network technology
+
+What is a network bridge?
+A device that creates a single, aggregate nwetwork from multiple other networks
+
+What is an example of a bridge?
+The wireless access point which connects the IEEE 802.3 wired LAN with the IEEE 802.11 wireless LAN within a household
+
+What is a network switch?
+A networking hardware that connects devices ona network using packet switching to receive and forward data to the destination device, allows devices within a network to communicate
+
+What is a network router?
+A networkign device that forwards data packets between computer networks, allowing for connection between networks, subsequently providing global connectivity in the case of the Internet
+
+What is a stub network?
+A network as part of an internetwork with no knowledge of other networks, that will typically send much or all of its non local traffic out via a single path
+
+What is a backbone network?
+A network which interconnects other networks, providing a path for the exchange of information between different sub networks
+
+What are the 7 layers of the OSI model?
+Application, Presentation, Session, Transport, Network, Data, Physical
+
+What is the function of the application layer?
+High level protocols such as for resource sharing or remote file access e.g HTTP
+
+What is the function of the presentation layer?
+Translation of data between a networking service and an application, including character encoding, data compression and encyrption/decryptions
+
+What is the function of the Session layer?
+Managing communication sessions ie continous exchange of infromation in the form of multiple back and forth transmissions between two nodes
+
+What is the function of the Transport layer?
+Reliable transmission of data segmenets between points on a network, protocols include TCP and UDP
+
+What is the function of the Netwok protocol?
+Structuring and managing a multi node network including addressing, routing and traffic control. At this layer IP is used to control end to end communication
+
+What is the function of the data link layer?
+Transmission of data frames between two nodes connected by a physical layer
+
+What is the function of the physical layer?
+Transmission and reception of raw bit streams over a physical medium
+
+What is a protocol?
+A set of conventions governing the treatment and especially the formatting of data in an electronical communications system 
+
+How does encapsulation work in the OSI model?
+At each layer of the model, the layer below acts as a black box that we don't need to understand how it works, allowing our data to be encapsulated as the payload of the layer below
+
+What is a connectionless communication model?
+One in which each data packet is individually addressed and routed based on information carried in each packet, rather than in the setup of a prearranged fixed data channel. 
+
+What is a connection orieneted communication model?
+One in which a communication session is established before any usedful data can be transfferred. The establish connection ensuires that data is delivered in the correct order to the upper communication layer
+
+What are the benefits and downsides of connectionless communication?
+Low latency, low traffic overhead, no reliability, no ordering, possible duplication
+
+What are the benefits and downsides of connection oriented communication?
+Reliable deliver, ordered delivery, no duplications, control (congestion and flow) of packet flow, connection overhead causes latency and more traffic for network
+
+What is the client server model?
+A messaging pattern in which the partipents are divided into servers, which provide a resource or service, and clients which request from said service. The server waits for a client to connect, while the client must identify a servwer and connect to it
+
+How large is an IPv4 address?
+32 bits
+
+How large is an IPv6 address?
+128 bits.
+
+What are the components of the IPv4 header?
+Version, IHL (header length), Type of service, total length, identification, flags, frament offset, time to live, protocol, header checksum, source address, destination address
+
+What are the components of the IPv6 header?
+Version, traffic class, flow label, payload leangth, next header, hop limit, source address, destination address
+
+What is an ip address?
+a numerical label that is assigned to an interface on an IP host, that uniquely identifies the host within the internetwork
+
+How does the old IPv4 class system work?
+Class A with a 8 bit network prefix, class B with a 16 bit network prefix, class C with a 24 bit network prefix, Class D for multicast addresses and Class E for experimental use
+
+What is the relevence of a network prefix in an IP adreess?
+The network prefix uniquely identifies a network with many hosts, all hosts on this network have the same network prefix and so the same starting n bits. A small network prefix means many hosts on that network. Class A would have 2^24 hosts which is very wasteful
+
+Hows does the classless system work for IPv4 addresses
+Network prefix size is no longer fixed based on the address class. Uses a slash notation ie /24 to dictate how many bits identify the network and nhow many identify the individual hosts
+
+What is CIDR?
+Classless InterDomain Routing? The system that allows classless ip addreses
+
+What is the benefit of CIDR?
+Allows more flexibility in the size of network prefixes to be given to organisations, allows organisations to more easily create sub networks within their address space
+
+What is NAT?
+Network address translation. The process of a router using a single IP address to bind to multiple host interfaces within its network, using ports to uniquely identify host interfaces
+
+What is the main benefit and downside of NAT?
+Helps get around ip address exhaustion, but breaks the internets end to end model
+
+What is the DNS?
+Domain Name System, a hierarchical and distributed name service that maps domain names to IP addresses
+
+How does name resolution work in DNS?
+Client sends request to first resolver, which then sends requests to secondary resolvers until the root server is reached, at which point the address of the remote server is send back to the first resolver which then accesses the remote server and returns the IP to the client. This is short circuited at any point if the request is cached at any of these servers
+
+next is net05
+
 
