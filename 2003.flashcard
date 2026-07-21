@@ -150,4 +150,21 @@ A connectionless, unconfirmed, unreliable datagram service that sits as a thin l
 What are the components of the UDP header?
 Source port, destination port, length, checksum
 
-next is net06
+What is unicast communication?
+One to one transmission between sender and Receiver, default communication model
+
+What is broadcast communication?
+One to all transmission between 1 sender and all receivers on the (sub)network receivers.
+
+How do you get the address for IP broadcasting on a subnetwork?
+Take the bitwise not of the subnet mask and then OR with the broadcast adress mask (all 1s in the n least siginficant bits where the mask is 32-n buts long)
+
+What is multicast communication?
+One to many transmission between 1 sender and some "subscribed" receivers
+
+Why dont we use TCP for multicast?
+The flow control and congestion control algorithms rely on a single reciver, in flow control which receiver should we listen to, in congestion control which receiver path should we use, if one receiver drops a packet all receivers will be affected, which is really bad.
+
+
+
+next is net07
