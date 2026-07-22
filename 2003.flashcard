@@ -165,6 +165,16 @@ One to many transmission between 1 sender and some "subscribed" receivers
 Why dont we use TCP for multicast?
 The flow control and congestion control algorithms rely on a single reciver, in flow control which receiver should we listen to, in congestion control which receiver path should we use, if one receiver drops a packet all receivers will be affected, which is really bad.
 
+What are the main axes of improvement in server technology?
+Scalability - how many users can we service at once, and performance, what quality of service can we provide for our users.
+
+What are the functions of a server?
+Access to the application functions and resources, check and implement operations requested by client, including access control and security features, check and interpret network communication, report system and network events and errors to the clients and admins 
+
+What data structure might we use to control responding to multiple users of a server?
+(Circular) fifo queues
 
 
-next is net07
+
+
+next is net08
