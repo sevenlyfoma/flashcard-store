@@ -174,7 +174,34 @@ Access to the application functions and resources, check and implement operation
 What data structure might we use to control responding to multiple users of a server?
 (Circular) fifo queues
 
+What are regex for?
+Used for matching a pattern of characters in some input text
 
+What does ^ mean in regex?
+Start of a line
 
+What does $ mean in regex?
+End of a line
 
-next is net08
+What does [] mean in regex?
+Matches any characters enclosed in the brackets
+
+What does - mean in regex?
+The range specifier, put inside a set of brackets like [a-c] 
+
+What does ? mean in regex?
+Matches zero or one of the preceeding expression
+
+What does * mean in regex?
+Matches zero, one or many of the preceeding expression
+
+What does + mean in regex?
+Matches one or many of the preceeding expression
+
+What does \ mean in regex?
+Use the literal meaning of a metacharacter
+
+What does ^ meann in regex?
+Not specifier, so dont match that pattern
+
+next is net09
