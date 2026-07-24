@@ -204,4 +204,63 @@ Use the literal meaning of a metacharacter
 What does ^ meann in regex?
 Not specifier, so dont match that pattern
 
-next is net09
+Outline the components of the http request message format.
+Method, url, version, header lines (header field, value), body
+
+Outline the components of the http response message format.
+Version, status code, phrase, header lines (header field, value), body
+
+What are the consequences of HTTP being a text based protocol?
+Human readable/ debuggable, less data efficient, binary data must be encoded into a printable format, e.g. base64
+
+What are the HTTP request methods
+GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH
+
+What is HTTP GET for?
+Requests a representation of the specified resource
+
+What is HTTP HEAD for?
+Identicial to GET but without a response body
+
+What is HTTP POST for?
+Sends data to the server in a non-idempotent way
+
+What is HTTP PUT for?
+Replaces all current representations of the target resource with the request content, sends data to the server in an indempotent way
+
+What is HTTP DELETE for?
+Deletes the specified resource
+
+What is HTTP CONNECT for?
+Establishes a tunnel to the server identified by the target resource
+
+What is HTTP OPTIONS for?
+Describes the communication options for the target resource.
+
+What is HTTP TRACE for?
+Performs a message loop back test along the path to the target resource
+
+What is HTTP PATCH for?
+Applies partial modification to a resourece
+
+What is the main improvement of HTTP 1.1
+in 1.0 a new TCP connection waas made for every object linked on a page, in 1.1 a single TCP connection is kept open to fetch multiple objects
+
+What are the main improvements of HTTP 2
+Defaults to using HTTP over TLS (HTTPS), uses a binary encoding instead of text based encoding, support for request multiplexing and pipelining
+
+What is the main improvement of HTTP 3
+Built on top of QUIC instead of TCP, and so has a faster connection set upper
+
+What is a cache?
+A local 'conveniently place' copy of data which servers as a performance optimisation tool.
+
+How does client side caching work?
+Client saves a local copy of the data it receives so it does not need to re request in within some specified time?
+
+How does server side caching work?
+Data that is more invariant and more likely to be used by any user is copied and stored on a closer intermediate server from the original 'true' server/
+
+
+
+next is net10
