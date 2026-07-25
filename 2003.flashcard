@@ -261,6 +261,21 @@ Client saves a local copy of the data it receives so it does not need to re requ
 How does server side caching work?
 Data that is more invariant and more likely to be used by any user is copied and stored on a closer intermediate server from the original 'true' server/
 
+What is packet forwarding?
+Receiving a packet, looing up destination address in a table, and sending the packet in the direction indicated by the table
+
+What is packet routing?
+The process by which forwarding tables are built, by discovering paths through the network, gathering routing information by using a routing protocol
+
+How is a route chosen for forwarding?
+The entry in the forwarding table with the prefix with the longest match of leading digits is chosen, if no prefix matches, use the default route
+
+What is the private IP address space?
+The set of IP addresses that are allocated for private networks for which the users are not directly connected to the internets
+
+What are the special network prefixes for private IP addreses?
+10/8 172.16/12 and 192.168/16
 
 
-next is net10
+
+next is net11
