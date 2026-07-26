@@ -276,6 +276,13 @@ The set of IP addresses that are allocated for private networks for which the us
 What are the special network prefixes for private IP addreses?
 10/8 172.16/12 and 192.168/16
 
+What is transmission delay?
+The time taken to put bits on the wire, measured as the number of bits / data rate.
+
+What is propogation delay?
+The time taken for a signal to traverse a link, measured as the distance of the link / speed of the signal
 
 
-next is net11
+
+
+next is more net11
