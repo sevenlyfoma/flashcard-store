@@ -282,7 +282,40 @@ The time taken to put bits on the wire, measured as the number of bits / data ra
 What is propogation delay?
 The time taken for a signal to traverse a link, measured as the distance of the link / speed of the signal
 
+What is hierarchichal routing?
+The partitioning of the area into multiple areas, each area has a single routing protocol within it. Each area has a border router that communicates with routers in other areas, with a potentially different routing protocol
+
+What is the border gateway policy used for?
+Routing between different autonomous systsems (ie seperated networks)
+
+How does BGP decide routing?
+Mainly policy based, so commerical agreements for different sources, time of day changes, political blocking of some sources (ie russian news channels in the uk), authentification
+
+What is a firewall?
+A  network security system situated on a border router that implements a filter policy that controls which packets can leave or enter the network, based on ip address, port numbering, protocols, header fields, etc
+
+How does public key cryptography work basically?
+Sender encrypts message with receivers public key, such that only receiver can decrypt the message with their private key
+
+How does private key cryptography work basically?
+Sender and receiver share a secret key with each other used to encrypt and decrypt data
+
+What is a message authentification code?
+A use of private key cryptography for digital signitures, sender hashes the message with the key to get the MAC and attaches it to the message, where the receiver can do the same to authenticate the message
+
+What is a digital signiture?
+A user of public key cryptography for authenticity, plain text is hashed, encrypted with a private key into a the DS which is then attached to the plain text and is then decrypted with the public key and compared against the receiver calculated hash.
+
+How are certificates used for security?
+Certificates are a piece of information with a digital signiture that contains a user ID, public keys, dates of validity and the certification authority id and signature. On receiving a signature a user checks the signature using the CAs public key, check for revocation, but importantly must trust the CA.
+
+How are trusted certificate authorities provided to user?
+Pre installed as part of web browser for normal users
+
+What is TLS/SSL?
+Transport layer secuirty/ Secure sockets layer, a general security API for any protocol over TCP. End to end, sits above the normal sockets interface
 
 
 
-next is more net11
+
+next is more web01
