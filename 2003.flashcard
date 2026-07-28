@@ -315,7 +315,9 @@ Pre installed as part of web browser for normal users
 What is TLS/SSL?
 Transport layer secuirty/ Secure sockets layer, a general security API for any protocol over TCP. End to end, sits above the normal sockets interface
 
+What is the DOM?
+Document object model? The logical tree structure that web documents have, which can be used to navigate a page programattically
 
 
 
-next is more web01
+next is more web4
