@@ -318,6 +318,25 @@ Transport layer secuirty/ Secure sockets layer, a general security API for any p
 What is the DOM?
 Document object model? The logical tree structure that web documents have, which can be used to navigate a page programattically
 
+What are websockets?
+An api that provides full duplex communication over a TCP connection between a web browser and a web server
 
+What is a callback?
+Any executable code that is passed as an argument to other code that is expected to call back the argument at a given time
 
-next is more web4
+How do call backs work in javascript in the context of a web api?
+The web api (ie set timeout) is assigned to the thread pool. Once the web api calls back, the call back function is added to the event queue, and at some point when the call stack is empty it will be taken out of the event queue and on to the call stack to be executed
+
+What is a javascript promise?
+An object that is used as a placeholder for the eventual results of a deferred, possibly asynchronous, computation
+
+What are the components of a javascript promise?
+The object that is promised, the function that is used to fufill that promise, and a function that is used to reject that promise.
+
+What are the states of a javascript promise?
+Fufilled, rejected, pending
+
+What is a cookie?
+A string that looks like name1=value1;name2=value2 , that stores some local client data
+
+next is web6
